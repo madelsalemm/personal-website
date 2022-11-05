@@ -17,3 +17,4 @@ def send_message(request):
         send_mail(subject, message, settings.EMAIL_HOST_USER , [email])
     context = {'myinfo' : myinfo}
     return render (request , 'contact/contact.html' , context)
+

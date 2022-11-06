@@ -5,21 +5,13 @@ from django.db import models
 
 class Info(models.Model):
     name = models.CharField(max_length = 150)
-    age = models.IntegerField(max_length = 2)
+    age = models.IntegerField()
     website = models.CharField(max_length = 150)
     degree = models.CharField(max_length = 150)
     phone = models.CharField(max_length = 15)
     city = models.CharField(max_length = 150)
     email =  models.EmailField(max_length = 150)
     Freelance = models.CharField(max_length = 50)
-    html = models.IntegerField(max_length = 3)
-    css = models.IntegerField(max_length = 3)
-    django = models.IntegerField(max_length = 3)
-    react = models.IntegerField(max_length = 3)
-    api = models.IntegerField(max_length = 3)
-    microsoft_project = models.IntegerField(max_length = 3)
-    pro_image_main = models.ImageField(upload_to='', null = True , blank=True)
-    pro_image_sub = models.ImageField(upload_to='', null = True , blank=True)
 
     class Meta:
         verbose_name = 'Info'
@@ -30,7 +22,7 @@ class Info(models.Model):
 
 class Skill (models.Model):
     skill_name = models.CharField(max_length = 100)
-    degree = models.IntegerField(max_length = 3)
+    degree = models.IntegerField()
 
 
     class Meta:

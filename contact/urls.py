@@ -6,5 +6,5 @@ app_name = 'contact'
 
 
 urlpatterns = [
-    path('', views.send_message , name = 'contact'),
+    #path('', views.send_message , name = 'contact'),
 ]

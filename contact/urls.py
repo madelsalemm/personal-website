@@ -6,5 +6,6 @@ app_name = 'contact'
 
 
 urlpatterns = [
-    #path('', views.send_message , name = 'contact'),
+    #path('profile/<pk>', views.InfoDetail.as_view() , name = 'contact'), #CBV
+    path('profile/<pk>', views.infodetail , name = 'contact'), #FBV
 ]

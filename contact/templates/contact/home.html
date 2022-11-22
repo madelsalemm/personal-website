@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load bootstrap5 %}
+
+
+
+{% block hero_section %}
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <img src="{{pimage.pro_image_main.url}}">
+    <div class="hero-container">
+      <h1>Mohamed Adel</h1>
+      <h2>I'm a Django Backend Developer</h2>
+      <a href="#about" class="btn-scroll scrollto" title="Scroll Down"><i class="bx bx-chevron-down"></i></a>
+    </div>
+  </section>
+  <!-- End Hero -->
+
+{% endblock hero_section %}
+
